@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Sign_Up.css">
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <section class="flex-container-column">
+      <h1>Sign Up</h1>
+      <div class="go-login"><span>Already a member?</span> <span style="color: blue; font-weight: 700;">Login</span>
+      </div>
+      <section class="flex-container-column">
+        <form action="">
+          <section class="flex-container-column form-group box-shadow transition-all-300">
+
+            <label for="role">
+              <span>Role</span>
+              <select id="role" type="text">
+                <option value="">Select a role</option>
+              </select>
+            </label>
+
+            <label for="name">
+              <span>name</span>
+              <input id="name" type="text" placeholder="Enter your name">
+            </label>
+
+            <label for="phone">
+              <span>Phone</span>
+              <input id="phone" type="number" placeholder="Enter your phone number">
+            </label>
+
+            <label for="email">
+              <span>Email</span>
+              <input id="email" type="email" placeholder="Enter your email">
+            </label>
+
+            <label for="password">
+              <span>Password</span>
+              <input id="password" type="password" placeholder="Enter your password">
+            </label>
+
+          </section>
+          <div class="flex-container-row button-group">
+            <button class="transition-all-300 btn submit-btn">Submit</button>
+            <button class="transition-all-300 btn reset-btn">Reset</button>
+          </div>
+        </form>
+      </section>
+      </div>
+  </body>
+
+</html>

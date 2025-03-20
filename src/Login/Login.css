@@ -1,0 +1,128 @@
+/* Eliminar flechas en navegadores WebKit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.transtion-all-300 {
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.forgot {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(153, 153, 150);
+}
+
+.btn {
+    width: 38%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, #0d32ad, #5033bd);
+    color: white;
+}
+
+.reset-btn {
+    background: linear-gradient(90deg, #e63946, #ff006e);
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow {
+    border-bottom: 1px solid rgb(198, 204, 209);
+    box-shadow:  0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.box-shadow:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-group {
+    width: 100%;
+    margin-top: 17px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: rgb(14, 14, 109);
+}
+
+.go-login {
+    padding: 8px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+    padding: 2rem;
+    align-items: flex-start;
+    border: 1px solid rgb(109, 106, 106);;
+}
+
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0 13px 0;
+    width: 300px;
+}
+
+input, select {
+    padding: 0.5rem;
+    background-color: #fafafa;
+    outline: none;
+    border: 1px solid slategrey;
+    border-radius: 2px
+}
+
+label > span {
+    font-size: medium;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+label > :not(:last-child) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(1 * 5px) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(1 * 5px) * calc(1 - var(--tw-space-y-reverse)));
+};
+
+
