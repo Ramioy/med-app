@@ -1,6 +1,8 @@
 import React from 'react'
 import './Navbar.css'
 
+import { Link } from "react-router-dom";
+
 import logo from './logo.png'
 
 const Navbar = () => {
@@ -20,8 +22,8 @@ const Navbar = () => {
                     <li className="flex-container-row"><a href="www.ramioy.com" className="transtion-all-300 li-a ">Reviews</a></li>
                 </ul>
                 <section className="flex-container-row button-container pad-y-10">
-                <button type='button' className="flex-container-row nav-button transtion-all-300 box-shadow">Sign Up</button>
-                <button type='button' className="flex-container-row nav-button transtion-all-300 box-shadow">Login</button>
+                <button type='button' className="flex-container-row nav-button transtion-all-300 box-shadow"><Link to={{pathname: '/signup'}}>Sign Up</Link></button>
+                <button type='button' className="flex-container-row nav-button transtion-all-300 box-shadow"><Link to={{pathname: '/login'}}>Login</Link></button>
                 </section>
             </section>
         </nav>
