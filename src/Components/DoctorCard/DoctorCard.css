@@ -1,0 +1,93 @@
+.transition-all-300 {
+    transition: all;
+    animation-duration: 300ms;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.card-container {
+    border: 1px solid silver;
+    box-shadow:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) ;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.card-container:hover {
+    box-shadow:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.inner-container {
+    padding: 5px;
+}
+
+.inner-container > *:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.card-container > .inner-container > .avatar-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.card-container > .inner-container > .avatar-container > .avatar-backwall {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) ;
+}
+
+
+.card-container > .inner-container > .avatar-container > .avatar-img {
+    position: absolute;
+    bottom: -2px;
+    width: 200px;
+}
+
+.card-container > .inner-container > .doctor-info-container > *:not(:first-child) {
+    margin-top: 5px;
+}
+
+.card-container > .inner-container > .doctor-info-container > span {
+    display: block;
+}
+
+.card-container > .inner-container > .doctor-info-container > .doctor-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.card-container > .inner-container > .doctor-info-container > .doctor-experience {
+    color: blue;
+    font-weight: 500;
+}
+
+.card-container > .inner-container > .doctor-info-container > .doctor-qualifications {
+    color: red;
+    font-weight: 400;
+}
+
+.card-container > .inner-container > .appointment-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    cursor: pointer;
+}

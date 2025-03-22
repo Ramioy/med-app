@@ -21,25 +21,25 @@ export const FindDoctorSearch = () => {
     return (
         <div className='input-result'>
             <div className="search-container">
-                <input 
-                    type='text' 
-                    placeholder="Search doctors, clinics, hospitals, etc." 
-                    onFocus={() => setDoctorResultHidden(false)} 
-                    onBlur={() => setDoctorResultHidden(true)} 
-                    value={searchDoctor} 
+                <input
+                    type='text'
+                    placeholder="Search doctors, clinics, hospitals, etc."
+                    onFocus={() => setDoctorResultHidden(false)}
+                    onBlur={() => setDoctorResultHidden(true)}
+                    value={searchDoctor}
                     onChange={(e) => setSearchDoctor(e.target.value)}
                 />
-                <img src={magnifier} alt="search-icon" title="click me"/>
+                <img src={magnifier} alt="search-icon" title="click me" />
             </div>
-            <br/>
+            <br />
             <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                 {
-                    specialities.map(speciality => 
-                    <div className="search-doctor-result-item" key={speciality} onMouseDown={() => handleDoctorSelect(speciality)}>
-                        <span><img src={magnifier} alt="x" title='y' style={{height:"15px", width:"15px", borderRadius: '50%'}} /></span>
-                        <span>{speciality}</span>
-                        <span>SPECIALITY</span>
-                    </div>)
+                    specialities.map(speciality =>
+                        <div className="search-doctor-result-item" key={speciality} onMouseDown={() => handleDoctorSelect(speciality)}>
+                            <span><img src={magnifier} alt="x" title='y' style={{ height: "15px", width: "15px", borderRadius: '50%' }} /></span>
+                            <span>{speciality}</span>
+                            <span>SPECIALITY</span>
+                        </div>)
                 }
             </div>
         </div>

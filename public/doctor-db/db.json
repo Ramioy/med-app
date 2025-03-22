@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Dr. Leovigildo Álvarez",
+        "speciality": "Dentist",
+        "experience": "4",
+        "qualification": "4.2/5.0",
+        "profilePic": "/doctor-db/images/5.png"
+    },
+    {
+        "name": "Dra. Hermenegilda Ruiz",
+        "speciality": "Dentist",
+        "experience": "7",
+        "qualification": "4.3/5.0",
+        "profilePic": "/doctor-db/images/1.png"
+    },
+    {
+        "name": "Dr. Roderico Fernández",
+        "speciality": "Dentist",
+        "experience": "3",
+        "qualification": "4.8/5.0",
+        "profilePic": "/doctor-db/images/6.png"
+    },
+    {
+        "name": "Dra. Euríaca Domínguez",
+        "speciality": "Dentist",
+        "experience": "12",
+        "qualification": "5.0/5.0",
+        "profilePic": "/doctor-db/images/2.png"
+    },
+    {
+        "name": "Dr. Wulfrano Gómez",
+        "speciality": "Gynecologist/Obstetrician",
+        "experience": "10",
+        "qualification": "4.0/5.0",
+        "profilePic": "/doctor-db/images/7.png"
+    },
+    {
+        "name": "Dra. Amalasunta López",
+        "speciality": "Gynecologist/Obstetrician",
+        "experience": "12",
+        "qualification": "4.5/5.0",
+        "profilePic": "/doctor-db/images/3.png"
+    },
+    {
+        "name": "Dr. Teodomiro Sánchez",
+        "speciality": "Gynecologist/Obstetrician",
+        "experience": "4",
+        "qualification": "4.6/5.0",
+        "profilePic": "/doctor-db/images/8.png"
+    },
+    {
+        "name": "Dra. Ingundia Martínez",
+        "speciality": "Gynecologist/Obstetrician",
+        "experience": "7",
+        "qualification": "4.8/5.0",
+        "profilePic": "/doctor-db/images/4.png"
+    }
+]

@@ -16,6 +16,8 @@
 
 
 .input-result > .search-container > input {
+    font-size: larger;
+    width: 100%;
     border: none;
 }
 
