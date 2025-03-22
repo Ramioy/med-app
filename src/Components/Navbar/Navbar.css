@@ -9,7 +9,7 @@
     transition-duration: 300ms;
 }
 
-.nav-button {
+.button-container > .nav-button {
    width: 120px;
    height: 40px;
    border-radius: 25px;
@@ -21,7 +21,7 @@
    font-size: 1rem;
 }
 
-.nav-button:hover {
+.button-container > .nav-button:hover {
     border: 1px solid rgb(151, 113, 223);
 }
 
@@ -97,17 +97,17 @@
     padding: 0;
 }
 
-.li-a {
+.nav-ul-container > li > .li-a {
     display: inline-block;
     text-decoration: none;
     color: rgb(92, 91, 91);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 300;
-    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
     cursor: pointer;
 }
 
-.li-a:hover {
+.nav-ul-container > li > .li-a:hover {
     color: rgb(37, 37, 216);
 }
 
