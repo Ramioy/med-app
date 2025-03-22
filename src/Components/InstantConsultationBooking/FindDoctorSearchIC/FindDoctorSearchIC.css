@@ -6,29 +6,6 @@
     padding: 30px;
 }
 
-.search-top > .search-container {
-    display: flex;
-    background-color: #fafafa;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-.search-top > .search-container > input {
-    border: none;
-}
-
-.search-top > .search-container > img {
-    max-width: 41px;
-    min-width: 41px;
-    max-height: 41px;
-    min-height: 41px;
-}
-
 .location-search-box {
     display: flex;
     align-items: center;
