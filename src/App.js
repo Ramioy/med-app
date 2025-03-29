@@ -9,7 +9,7 @@ import Navbar from './Components/Navbar/Navbar';
 import LandingPage from './Components/Landing_Page/LandingPage'
 import SignUp from './Components/Sign_Up/SignUp';
 import Login from './Components/Login/Login';
-import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation';
+import BookingConsultation from './Components/BookingConsultation';
 
 // Function component for the main App
 function App() {
@@ -17,19 +17,19 @@ function App() {
   // Render the main App component
   return (
     <div className="App">
-        {/* Set up BrowserRouter for routing */}
-        <BrowserRouter>
-          {/* Display the Navbar component */}
-          <Navbar/>
+      {/* Set up BrowserRouter for routing */}
+      <BrowserRouter>
+        {/* Display the Navbar component */}
+        <Navbar />
 
-          {/* Set up the Routes for different pages */}
-          <Routes>
-            <Route path='/' element={<LandingPage />} />
-            <Route path='/signup' element={<SignUp />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/instant-consultation' element={<InstantConsultation />} />
-          </Routes>
-        </BrowserRouter>
+        {/* Set up the Routes for different pages */}
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/appointments' element={<BookingConsultation />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

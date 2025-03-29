@@ -167,3 +167,12 @@ button.btn-cancel {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(219, 5, 5) 35%, rgb(255, 0, 0) 100%);
     cursor: pointer;
 }
+
+.bookedInfo > p {
+    color: black;
+}
+
+.bookedInfo > p > span {
+    font-weight: 600;
+    color: crimson;
+}

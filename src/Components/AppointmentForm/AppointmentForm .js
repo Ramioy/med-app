@@ -4,6 +4,8 @@ import '../AppointmentForm/AppointmentForm.css'
 const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [appointmentDate, setAppointmentDate] = useState('');
+    const [timeSlot, setTimeSlot] = useState('')
     const [selectedSlot, setSelectedSlot] = useState(null);
 
     const handleSlotSelection = (slot) => {
@@ -12,7 +14,7 @@ const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        onSubmit({ name, phoneNumber });
+        onSubmit({ name, phoneNumber, appointmentDate, timeSlot });
         setName('');
         setPhoneNumber('');
     };
@@ -42,6 +44,32 @@ const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     required
                 />
+            </div>
+            <div className="flex-container flex-row">
+                <label className='labelform' htmlFor="appointmentDate">Date of Appointment:</label>
+                <input
+                    className='inputform'
+                    type="date"
+                    id="appointmentDate"
+                    value={appointmentDate}
+                    onChange={(e) => setAppointmentDate(e.target.value)}
+                    required
+                />
+            </div>
+            <div className="flex-container flex-row">
+                <label className='labelform' htmlFor="selectSlot">Book Time Slot:</label>
+                <select
+                    className='inputform'
+                    id="selectSlot"
+                    value={timeSlot}
+                    onChange={(e) => setTimeSlot(e.target.value)}
+                    required
+                >
+                    <option value="" selected>Select a time slot</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+
+                </select>
             </div>
             <button className='btn-book' type="submit">Book Now</button>
         </form>

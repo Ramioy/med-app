@@ -92,8 +92,10 @@ const DoctorCard = ({ name, speciality, experience, qualification, profilePic })
                                     <h3 style={{ textAlign: 'center' }}>Appointment Booked!</h3>
                                     {appointments.map((appointment) => (
                                         <div className="bookedInfo" key={appointment.id}>
-                                            <p>Name: {appointment.name}</p>
-                                            <p>Phone Number: {appointment.phoneNumber}</p>
+                                            <p>Name: <span>{appointment.name}</span></p>
+                                            <p>Phone Number: <span>{appointment.phoneNumber}</span></p>
+                                            <p>Appointment Date: <span>{appointment.appointmentDate}</span></p>
+                                            <p>Time Slot: <span>{appointment.timeSlot}</span></p>
                                             <button className='btn-cancel' onClick={() => handleCancel(appointment.id)}>Cancel Appointment</button>
                                         </div>
                                     ))}
